@@ -22,8 +22,7 @@ def remove(instance):
     if len(instance) == 0:
         sys.stdout.write("Não há elementos\n")
     else:
-        path_file = instance.search(0)["nome_do_arquivo"]
-        instance.dequeue()
+        path_file = instance.dequeue()
         sys.stdout.write(f"Arquivo {path_file} removido com sucesso\n")
 
 
